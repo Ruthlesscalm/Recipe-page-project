@@ -1,0 +1,197 @@
+:root{
+    --body-bgcolor: #f3e6d8;
+    --main-bgcolor: #ffffff;
+    --heading-para-color: #5f574e;
+    --prep-bgcolor: #ffedf6;
+    --prep-heading-color: #7b284f;
+    --ingred-heading-color: #854632;
+    --border-color: #dedddd;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+main{
+    background-color: var(--main-bgcolor);
+    margin: clamp(30px , 10vw , 120px) 0;
+    width: clamp(340px , 80vw , 960px);
+    border-radius: 20px;
+    padding: clamp(10px , 4vw , 45px);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(35px , 5vw , 50px);
+}
+.image {
+    display: flex;
+    padding-bottom: clamp(35px , 5vw , 50px);
+}
+.image img{
+    width: 100%;
+    border-radius: 15px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading h1{
+    font-size: clamp(28px , 5vw , 50px);
+    font-weight: 400;
+    font-family: "Young Serif", serif;
+}
+.heading p{
+    font-size: clamp(13px , 2.2vw , 19px);
+    color: var(--heading-para-color);
+    line-height: 30px;
+}
+.prep {
+    background-color: var(--prep-bgcolor);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.prep h3{
+    color: var(--prep-heading-color);
+    font-size: clamp(16px , 2.3vw , 23px);
+}
+.prep ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.prep ul li{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: clamp(12px , 1.7vw , 18px);
+    color: var(--heading-para-color);
+}
+.prep ul li::marker{
+    color: var(--prep-heading-color);
+}
+.prep ul li span{
+    font-weight: bold;
+}
+.ingred , .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ingred h2 , .info h2{
+    font-size: clamp(22px , 4vw , 35px);
+    font-family: "Young Serif", serif;
+    color: var(--ingred-heading-color);
+}
+.ingred ul , .info ol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ingred ul li , .info ol li{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: clamp(12px , 1.7vw , 18px);
+    line-height: clamp(20px , 3vw , 30px);
+    color: var(--heading-para-color);
+}
+.ingred ul li::marker , .info ol li::marker {
+    color: var(--ingred-heading-color);
+    font-weight: bold;
+}
+.info {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+}
+.info ol li span{
+    font-weight: bold;
+}
+.nutrients {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nutrients h2{
+    font-size: clamp(22px , 4vw , 35px);
+    font-family: "Young Serif", serif;
+    color: var(--ingred-heading-color);
+}
+.nutrients p{
+    font-size: clamp(13px , 2.2vw , 19px);
+    color: var(--heading-para-color);
+    line-height: 30px;
+}
+.nutrients ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+}
+.nutrients ul li{
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    font-size: clamp(13px , 2.2vw , 19px);
+    color: var(--heading-para-color);
+}
+.nutrients ul li:nth-child(7) , 
+.nutrients ul li:nth-child(8){
+    border: none;
+}
+.nutrients ul .padded {
+    padding-left: clamp(20px , 5vw , 50px);
+}
+.nutrients ul .loud {
+    color: var(--ingred-heading-color);
+    font-weight: bold;
+}
+footer {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+footer p {
+    font-size: clamp(12px , 2.5vw , 20px);
+}
+footer p a {
+    text-decoration: none;
+}
+footer p a:hover{
+    text-decoration-line: underline;
+    color: var(--ingred-heading-color);
+}
+
+@media screen and (max-width:480px){
+    main {
+        margin: 0 0 clamp(30px , 10vw , 120px) 0;
+        width: 100vw;
+        padding: 0;
+        padding-bottom: 25px;
+        border-radius: 0;
+    }
+    .image img{
+        border-radius: 0;
+    }
+    .heading {
+        margin: 0 clamp(10px , 4vw , 20px);
+    }
+    .prep , .ingred , .info , .nutrients{
+        margin: 0 clamp(10px , 6vw , 30px);
+    }
+    footer{
+        flex-direction: column;
+    }
+}
