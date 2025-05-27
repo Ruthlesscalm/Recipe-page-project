@@ -47,14 +47,14 @@ main{
     gap: 20px;
 }
 .heading h1{
-    font-size: clamp(28px , 5vw , 50px);
+    font-size: clamp(1.75rem , 5vw , 3.125rem);
     font-weight: 400;
     font-family: "Young Serif", serif;
 }
 .heading p{
-    font-size: clamp(13px , 2.2vw , 19px);
+    font-size: clamp(0.8125rem , 2.2vw , 1.1875rem);
     color: var(--heading-para-color);
-    line-height: 30px;
+    line-height: 1.875rem;
 }
 .prep {
     background-color: var(--prep-bgcolor);
@@ -66,7 +66,7 @@ main{
 }
 .prep h3{
     color: var(--prep-heading-color);
-    font-size: clamp(16px , 2.3vw , 23px);
+    font-size: clamp(1rem , 2.3vw , 1.4375rem);
 }
 .prep ul {
     display: flex;
@@ -76,7 +76,7 @@ main{
 .prep ul li{
     padding-left: 20px;
     margin-left: 20px;
-    font-size: clamp(12px , 1.7vw , 18px);
+    font-size: clamp(0.75rem , 1.7vw , 1.125rem);
     color: var(--heading-para-color);
 }
 .prep ul li::marker{
@@ -91,7 +91,7 @@ main{
     gap: 20px;
 }
 .ingred h2 , .info h2{
-    font-size: clamp(22px , 4vw , 35px);
+    font-size: clamp(1.375rem , 4vw , 2.4375rem);
     font-family: "Young Serif", serif;
     color: var(--ingred-heading-color);
 }
@@ -103,8 +103,8 @@ main{
 .ingred ul li , .info ol li{
     padding-left: 20px;
     margin-left: 20px;
-    font-size: clamp(12px , 1.7vw , 18px);
-    line-height: clamp(20px , 3vw , 30px);
+    font-size: clamp(0.75rem  , 1.7vw , 1.125rem);
+    line-height: clamp(1.25rem , 3vw , 1.875rem);
     color: var(--heading-para-color);
 }
 .ingred ul li::marker , .info ol li::marker {
@@ -125,14 +125,14 @@ main{
     gap: 20px;
 }
 .nutrients h2{
-    font-size: clamp(22px , 4vw , 35px);
+    font-size: clamp(1.375rem , 4vw , 2.1875rem);
     font-family: "Young Serif", serif;
     color: var(--ingred-heading-color);
 }
 .nutrients p{
-    font-size: clamp(13px , 2.2vw , 19px);
+    font-size: clamp(0.8125rem , 2.2vw , 1.1875rem);
     color: var(--heading-para-color);
-    line-height: 30px;
+    line-height: 1.875rem;
 }
 .nutrients ul {
     list-style: none;
@@ -143,7 +143,7 @@ main{
 .nutrients ul li{
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 20px;
-    font-size: clamp(13px , 2.2vw , 19px);
+    font-size: clamp(0.8125rem , 2.2vw , 1.1875rem);
     color: var(--heading-para-color);
 }
 .nutrients ul li:nth-child(7) , 
@@ -164,7 +164,7 @@ footer {
     align-items: center;
 }
 footer p {
-    font-size: clamp(12px , 2.5vw , 20px);
+    font-size: clamp(0.75rem , 2.5vw , 1.25rem);
 }
 footer p a {
     text-decoration: none;
